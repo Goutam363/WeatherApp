@@ -3,6 +3,7 @@ const geoCode=require('./utils/geoCode.js')
 const forecast=require('./utils/forecast.js')
 const express = require('express')
 const app=express()
+const port=process.env.PORT || 3000
 const hbs=require('hbs')
 
 //Define path for express config
@@ -63,18 +64,6 @@ app.get('/weather',(req,res)=>{
     })
 })
 
-// app.get('/products',(req,res)=>{
-//     if(!req.query.search){
-//         return res.send({
-//             error:'You must provide a search term...'
-//         })
-//     }
-//     console.log(req.query.search)
-//     res.send({
-//         products:[]
-//     })
-// })
-
 app.get('/about/*',(req,res)=>{
     res.render('404',{
         title:'404',
@@ -99,6 +88,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
-    console.log('Server is up at the port 3000...')
+app.listen(port,()=>{
+    console.log('Server is up at the port '+port+'...')
 })

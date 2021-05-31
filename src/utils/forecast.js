@@ -10,7 +10,7 @@ const forecast=(latitude,longitude,callback)=>{
         }
         else{
             callback(undefined,{
-                forecastData:body.current.weather_descriptions[0]+'.<br>It is currently '+body.current.temperature+'degree but feesl like '+body.current.feelslike+'degree out there.<br>Humidity feels like '+body.current.humidity+'.<br>Wind speed is around '+body.current.wind_speed+'knot from '+body.current.wind_dir+'.',
+                forecastData:body.current.weather_descriptions[0]+'.<br>It is currently '+body.current.temperature+'degree but feesl like '+body.current.feelslike+'degree out there.<br>Humidity feels like '+body.current.humidity+'%.<br>Wind speed is around '+body.current.wind_speed+'knot from '+body.current.wind_dir+'.',
                 weatherIcon:body.current.weather_icons[0]
             })
         }
