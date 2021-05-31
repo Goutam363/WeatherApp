@@ -19,7 +19,7 @@ weatherForm.addEventListener('submit',(e)=>{
                 //console.log(data.forecast)
                 weatherIcon.src=data.weatherIcon
                 messageOne.textContent=data.location
-                messageTwo.textContent=data.forecast
+                messageTwo.innerHTML=data.forecast
             }
         })
     })

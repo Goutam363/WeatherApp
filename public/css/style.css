@@ -42,22 +42,42 @@ header a{
 }
 
 .portrait{
+    display:block;
     width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.aboutP{
+    color: #888888;
+    text-align: center;
+}
+
+.aboutP2{
+    color: #888888;
 }
 
 input{
+    width: 300px;
     border:1px solid #cccccc;
-    padding:8px
+    padding:8px;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
 }
 
 button{
+    width: 80px;
     cursor:pointer;
     border:1px solid #888888;
     background: #888888;
     color: white;
     padding: 8px;
+    border-top-right-radius: 43%;
+    border-bottom-right-radius: 43%;
 }
 #weatherIconImg{
     width:210px;
-    padding:20px
+    padding:20px;
+    border-radius: 20%;
 }
